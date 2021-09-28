@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgb(36, 36, 36);
+  color: whitesmoke;
 }
 
 .main {
@@ -61,7 +63,7 @@
 }
 
 .code {
-  background: #fafafa;
+  background: #363636;
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
