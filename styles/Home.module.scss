@@ -9,14 +9,22 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 2rem 5rem;
+  padding: 2rem 2rem;
   align-items: center;
   justify-content: center;
 }
 
 .footer {
+  display: flex;
+  flex-direction: row;
   margin-top: auto;
   flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.source {
+  margin: 0 2rem;
 }
 
 .skills {
@@ -42,7 +50,11 @@
 }
 
 .title {
-  font-size: 5rem;
+  @media (min-width: 768px) {
+    font-size: 5rem;
+  }
+
+  font-size: 2rem;
   margin: 0;
   text-align: center;
 }
@@ -53,7 +65,10 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+
   margin: 0;
   margin-bottom: 2rem;
   text-align: center;
@@ -61,8 +76,21 @@
 }
 
 .description {
-  margin: 0 4rem 1rem;
+  font-size: 1.25rem;
   text-align: center;
-  padding: 0rem 4rem;
   color: rgb(197, 197, 197);
+  margin: 2rem 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  display: inline-block;
+  .discord,
+  .github,
+  .twitter {
+    margin: 0 2rem;
+    text-align: center;
+    font-size: xx-large;
+  }
 }

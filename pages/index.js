@@ -13,6 +13,7 @@ export default function Home() {
       <Head>
         <title>andrew Bean{"'"}s Portfolio</title>
         <meta name="description" content="andrew Bean's Developer Portfolio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
@@ -22,6 +23,12 @@ export default function Home() {
         <h2 className={styles.subtitle}>
           A brief summary of my experience and past projects.
         </h2>
+
+        <div className={styles.contact}>
+          <span className={styles.github}><img src="Github-Mark-Light-32px.png" /> <a href="https://github.com/Yovez" target="_blank" rel="noopener noreferrer">Github.com/Yovez</a></span>
+          <span className={styles.discord}><img src="Discord-Icon-32px.png" width="48px" /> Yovez#6874</span>
+          <span className={styles.twitter}><img src="twitter-icon.png" /> <a href="https://twitter.com/itsYovez" target="_blank" rel="noopener noreferrer">@itsYovez</a></span>
+        </div>
 
         <p className={styles.description}>
           I am a 24 year old college student that&apos;s studying Computer Science.
@@ -33,6 +40,11 @@ export default function Home() {
           and focused on learning a new set of skills to advance in a career, web development.
           I started relearning the basics of HTML, CSS, and JS. Then I quickly dived into learning React, Node.js, and Express.js.
           The next set of goals I have planned are to relearn the basics of Python for the backend of web development, to use React and Python together.
+          <br />
+          <br />
+          My short term goal is to have a solid understanding of web development practices and a great understanding of a number of web technologies.
+          <br />
+          My long term goal is to be a professional web developer that either works as a Full-Stack developer in a company, or running a company of my own.
         </p>
 
         <div className={styles.skills}>
@@ -50,16 +62,22 @@ export default function Home() {
         </div>
 
         <footer className={styles.footer}>
-          Powered by{' '}
-          <a
-            href="https://vercel.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-            </span>
-          </a>
+          <div>
+            <a className={styles.source} href="https://github.com/Yovez/Portfolio"
+              target="_blank"
+              rel="noopener noreferrer">Source code for this Website</a>
+          </div>
+          <div>
+            Powered by{' '}
+            <a
+              href="https://vercel.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={styles.logo}>
+                <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+              </span>
+            </a></div>
         </footer>
       </main>
     </div>
