@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
+import Link from 'next/link'
 
 export default function Home() {
 
@@ -47,10 +48,39 @@ export default function Home() {
           My long term goal is to be a professional web developer that either works as a Full-Stack developer in a company, or running a company of my own.
         </p>
 
+        <hr className={styles.hr} />
+
+        <h1 className={styles.subttitle}>Projects</h1>
+        <p>
+          <span style={{color: 'greenyellow'}}>On-going/WIP</span> - <span style={{color: 'orangered'}}>Finished/Abandoned</span>
+        </p>
+
+        <div className={styles.projects}>
+          <div className={styles.project + ' ' + styles.ongoing}>
+            <h1 className={styles.title}>andrewBean.dev | Portfolio</h1>
+            <Link href={"https://github.com/Yovez/Portfolio"}><a target="_blank" className={styles.source}>Source Code</a></Link>
+            <iframe src="/" width="400px" height="300px" style={{borderStyle: "none"}}></iframe>
+          </div>
+          <div className={styles.project + ' ' + styles.ongoing}>
+            <Link href={"https://should-you-ride.herokuapp.com"}><a target="_blank" className={styles.title}>ShouldYouRide | Motorcycle focused Weather App</a></Link>
+            <Link href={"https://github.com/Yovez/ShouldYouRide"}><a target="_blank" className={styles.source}>Source Code</a></Link>
+            <Link href="https://should-you-ride.herokuapp.com"><a className={styles.preview} target={"_blank"}><Image src="/ShouldYouRide_preview.png" width={"320"} height={"320"} /></a></Link>
+          </div>
+          <div className={styles.project + ' ' + styles.ended}>
+            <Link href={"https://www.spigotmc.org/resources/islandrate-askyblock-bentobox.53519/"}><a target="_blank" className={styles.title}>IslandRate | Minecraft Server Plugin</a></Link>
+            <Link href={"https://github.com/Yovez/IslandRate"}><a target="_blank" className={styles.source}>Source Code</a></Link>
+            <Link href={"https://www.spigotmc.org/resources/islandrate-askyblock-bentobox.53519/"}><a target="_blank"><Image src="/IslandRate_stats.png" width={"320"} height={"320"} /></a></Link>
+          </div>
+        </div>
+
+        <hr className={styles.hr} />
+
+        <h1 className={styles.subtitle}>Skills & Experience</h1>
+
         <div className={styles.skills}>
           <h1 className={styles.skill}>Java - 5 years</h1>
           <h1 className={styles.skill}>HTML, CSS, JS - 3 years</h1>
-          <h1 className={styles.skill}>MySQL - 2 years</h1>
+          <h1 className={styles.skill}>SQL - 2 years</h1>
           <h1 className={styles.skill}>Node.js - 1 year</h1>
           <h1 className={styles.skill}>Express.js - 1 year</h1>
           <h1 className={styles.skill}>React.js - 1 year</h1>

@@ -27,6 +27,52 @@
   margin: 0 2rem;
 }
 
+.projects {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .ongoing {
+    border-color: greenyellow;
+  }
+
+  .ended {
+    border-color: orangered;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border-style: solid;
+  max-width: 500px;
+  min-height: 300px;
+  max-height: 500px;
+
+  .title {
+    font-size: x-large;
+    font-weight: bold;
+    margin: 1rem;
+  }
+
+  .source {
+    font-size: larger;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    font-style: italic;
+    color: gray;
+  }
+
+  .preview {
+    margin: 1rem;
+  }
+}
+
 .skills {
   display: flex;
   flex-direction: row;
@@ -86,11 +132,23 @@
   display: flex;
   flex-direction: row;
   display: inline-block;
+
   .discord,
   .github,
   .twitter {
     margin: 0 2rem;
+    display: inline;
     text-align: center;
     font-size: xx-large;
   }
+}
+
+.hr {
+  border: 0;
+  clear: both;
+  display: block;
+  width: 96%;
+  background-color: limegreen;
+  height: 3px;
+  margin-bottom: 1rem;
 }
