@@ -26,9 +26,9 @@ export default function Home() {
         </h2>
 
         <div className={styles.contact}>
-          <span className={styles.github}><img src="Github-Mark-Light-32px.png" /> <a href="https://github.com/Yovez" target="_blank" rel="noopener noreferrer">Github.com/Yovez</a></span>
-          <span className={styles.discord}><img src="Discord-Icon-32px.png" width="48px" /> Yovez#6874</span>
-          <span className={styles.twitter}><img src="twitter-icon.png" /> <a href="https://twitter.com/itsYovez" target="_blank" rel="noopener noreferrer">@itsYovez</a></span>
+          <span className={styles.github}><Image src="/Github-Mark-Light-32px.png" width={"32px"} height={"32px"}></Image> <a href="https://github.com/Yovez" target="_blank" rel="noopener noreferrer">Github.com/Yovez</a></span>
+          <span className={styles.discord}><Image src="/Discord-Icon-32px.png" width={"32px"} height={"32px"}></Image> Yovez#6874</span>
+          <span className={styles.twitter}><Image src="/twitter-icon.png" width={"32px"} height={"32px"}></Image> <a href="https://twitter.com/itsYovez" target="_blank" rel="noopener noreferrer">@itsYovez</a></span>
         </div>
 
         <p className={styles.description}>
@@ -52,14 +52,14 @@ export default function Home() {
 
         <h1 className={styles.subttitle}>Projects</h1>
         <p>
-          <span style={{color: 'greenyellow'}}>On-going/WIP</span> - <span style={{color: 'orangered'}}>Finished/Abandoned</span>
+          <span style={{ color: 'greenyellow' }}>On-going/WIP</span> - <span style={{ color: 'orangered' }}>Finished/Abandoned</span>
         </p>
 
         <div className={styles.projects}>
           <div className={styles.project + ' ' + styles.ongoing}>
             <h1 className={styles.title}>andrewBean.dev | Portfolio</h1>
             <Link href={"https://github.com/Yovez/Portfolio"}><a target="_blank" className={styles.source}>Source Code</a></Link>
-            <iframe src="/" width="400px" height="300px" style={{borderStyle: "none"}}></iframe>
+            <iframe src="/" width="400px" height="300px" style={{ borderStyle: "none" }}></iframe>
           </div>
           <div className={styles.project + ' ' + styles.ongoing}>
             <Link href={"https://should-you-ride.herokuapp.com"}><a target="_blank" className={styles.title}>ShouldYouRide | Motorcycle focused Weather App</a></Link>
